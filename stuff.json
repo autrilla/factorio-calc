@@ -1,0 +1,127 @@
+{
+    "recipes": [
+        {
+            "results": {
+                "Stone": 1
+            },
+            "requirements": {},
+            "rate": 0.65,
+            "building": "miners"
+        },
+        {
+            "results": {
+                "Copper ore": 1
+            },
+            "requirements": {},
+            "rate": 0.525,
+            "building": "miners"
+        },
+        {
+            "results": {
+                "Iron ore": 1
+            },
+            "requirements": {},
+            "rate": 0.525,
+            "building": "miners"
+        },
+        {
+            "results": {
+                "Coal": 1
+            },
+            "requirements": {},
+            "rate": 0.525,
+            "building": "miners"
+        },
+        {
+            "results": {
+                "Stone brick": 1
+            },
+            "requirements": {
+                "Stone": 1
+            },
+            "rate": 0.28571428571,
+            "building": "furnace"
+        },
+        {
+            "results": {
+                "Copper plate": 1
+            },
+            "requirements": {
+                "Copper ore": 1
+            },
+            "rate": 0.28571428571,
+            "building": "furnace"
+        },
+        {
+            "results": {
+                "Iron plate": 1
+            },
+            "requirements": {
+                "Iron ore": 1
+            },
+            "rate": 0.28571428571,
+            "building": "furnace"
+        },
+        {
+            "results": {
+                "Steel plate": 1
+            },
+            "requirements": {
+                "Iron plate": 5
+            },
+            "rate": 0.05714285714,
+            "building": "furnace"
+        },
+        {
+            "results": {
+                "Copper cable": 2
+            },
+            "requirements": {
+                "Copper plate": 1
+            },
+            "rate": 2,
+            "building": "assembly"
+        },
+        {
+            "results": {
+                "Electronic circuit": 1
+            },
+            "requirements": {
+                "Copper cable": 3,
+                "Iron plate": 1
+            },
+            "rate": 2,
+            "building": "assembly"
+        }
+    ],
+    "miners": {
+        "Burner Mining Drill": {
+            "rate": 0.5,
+            "fuel": 300
+        },
+        "Electric Mining Drill": {
+            "rate": 1,
+            "electricity": 90
+        }
+    },
+    "furnace": {
+        "Stone Furnace": {
+            "rate": 1,
+            "fuel": 180
+        },
+        "Steel Furnace": {
+            "rate": 2,
+            "fuel": 180
+        },
+        "Electric Furnace": {
+            "rate": 2,
+            "electricity": 180
+        }
+    },
+    "assembly": {
+        "Assembly Mk1": {
+            "rate": 0.75,
+            "electricity": 200
+        }
+    }
+}
